@@ -4,7 +4,7 @@
     <title>Kendra L</title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/function.js"></script>
+    <script language="javascript" type="text/javascript" src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="UTF-8">
   </head>
@@ -24,7 +24,7 @@
             <li><a href="social">Social</a></li>
             <li><a href="contact">Contact</a></li>
           </ul>
-          <h1 id="nav-button" style="cursor: pointer;" onclick="openNav()">=</h1>
+          <h1 id="nav-button" style="cursor: pointer;" onclick="openNav()">&#9776</h1>
 
         </nav>
 
@@ -34,11 +34,11 @@
     			function openNav() {
             if (h == true) {
               document.getElementById("header-id").style.height = "200px";
-              $("#nav-button").text("x");
+              $("#nav-button").html("&#9747");
               h = false;
             }else{
               document.getElementById("header-id").style.height = "70px";
-              $("#nav-button").text("=");
+              $("#nav-button").html("&#9776");
               h = true;
             }
     			}
@@ -60,6 +60,40 @@
       </section>
 
       <section id="about">
+        <h1>June 11th, 2016 &#9829</h1>
+        <div id="married-div">
+        </div>
+        <h1>Kendra loves..</h1>
+        <div id="hobbies-div">
+          <div id="hobby1">
+            <h2>To travel &#9992</h2>
+            <div class="Pic1">
+              <img src="images/travel/travel1.png"/>
+              <img src="images/travel/travel2.png"/>
+              <img src="images/travel/travel3.png"/>
+              <img src="images/travel/travel4.png"/>
+            </div>
+          </div>
+          <div id="hobby2">
+            <h2>To hula hoop  &#9834</h2>
+            <div class="Pic1">
+              <img src="images/travel/travel3.png"/>
+              <img src="images/travel/travel4.png"/>
+              <img src="images/travel/travel2.png"/>
+              <img src="images/travel/travel1.png"/>
+            </div>
+          </div>
+          <div id="hobby3">
+            <h2>Golden Doodles &#9731</h2>
+            <div class="Pic1">
+              <img src="images/golden/golden1.png"/>
+              <img src="images/golden/golden2.png"/>
+              <img src="images/golden/golden3.png"/>
+              <img src="images/golden/golden4.png"/>
+            </div>
+          </div>
+
+        </div>
 
       </section>
 

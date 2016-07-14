@@ -1,5 +1,214 @@
 #about{
-  height:500px;
+  height:auto;
   width: 100%;
   background-color: yellow;
+  overflow: hidden;
+  background-image: url(../images/aboutbackground.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#about h1{
+  text-align: center;
+  color: rgba(243,243,243,.9);
+  font-size: 90px;
+  margin: 50px 0;
+  transition: .4s;
+}
+#about h1:hover{
+  color: rgba(255,255,255,1);
+}
+
+#married-div{
+  width: 170%;
+  height: 100px;
+  background-repeat: repeat-x;
+  position: relative;
+  left: -80%;
+  background-image: url(../images/wedding.png);
+  background-size: contain;
+  opacity: .8;
+}
+
+#hobbies-div{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#hobbies-div h2{
+  text-align: center;
+  color: rgba(0,0,0,.6);
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+#hobby1{
+  width: 32%;
+  height:auto;
+}
+#hobby2{
+  width: 32%;
+  height:auto;
+}
+#hobby3{
+  width: 32%;
+  height:auto;
+}
+
+.Pic1{
+  width: 100%;
+  height: auto;
+}
+
+.Pic1 img{
+  opacity: .8;
+  float: center;
+  margin: 0 auto;
+  width: 49%;
+  transition: .4s;
+}
+
+.Pic1 img:hover{
+  animation-name: hvr-buzz;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-buzz {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+@keyframes hvr-buzz {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about h1{
+    font-size: 60px;
+  }
+  #hobbies-div{
+    flex-direction: column;
+  }
+  #hobby1{
+    width: 100%;
+  }
+  #hobby2{
+    width: 100%;
+  }
+  #hobby3{
+    width: 100%;
+  }
+  #hobbies-div h2{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #about h1{
+    font-size: 35px;
+  }
+  #hobbies-div h2{
+    font-size: 20px;
+    margin-top: 25px;
+  }
 }
