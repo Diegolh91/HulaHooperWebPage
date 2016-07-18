@@ -1,5 +1,120 @@
 #youtube{
-  height:500px;
+  height:auto;
   width: 100%;
-  background-color: orange;
+  background-image: url(../images/youtubehoop.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#youtube h1{
+  text-align: center;
+  color: rgba(243,243,243,.9);
+  font-size: 90px;
+  margin: 50px 0;
+  transition: .4s;
+}
+#youtube h1:hover{
+  color: rgba(255,255,255,1);
+}
+
+#youtubevid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px 50px;
+  height: auto;
+}
+
+#youtubevid iframe{
+  width: 330px;
+  height: 185px;
+  margin: 0 auto;
+}
+
+#youtube a{
+  text-decoration: none;
+  color: #d74242;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  background: rgba(240,240,240,.8);
+  font-size: 25px;
+  transition: all .3s ease-in-out;
+}
+#youtube a:hover{
+  background: rgba(255,255,255,1);
+  transform: rotate(3deg);
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: rgba(0,0,0,.8);
+  height: 3px;
+  transition-property: right;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  #youtubevid iframe{
+    width: 260px;
+    height: 140px;
+  }
+  #youtube h1{
+    font-size: 60px;
+    margin: 50px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  #youtubevid iframe{
+    width: 220px;
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #youtubevid iframe{
+    width: 475px;
+    height: 265px;
+    margin: 20px 0;
+  }
+  #youtube h1{
+    font-size: 50px;
+    margin: 30px 0 0;
+  }
+  #youtubevid{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px 30px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  #youtubevid iframe{
+    width: 370px;
+    height: 205px;
+    margin: 20px 0;
+  }
 }
